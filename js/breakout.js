@@ -25,6 +25,7 @@ paddle = {
     h: 10,
     speed: 8,
     dx: 0,
+    border-radius: 25,
 }
 
 BrickInfo = {
@@ -84,15 +85,51 @@ function drawBricks() {
     })
 }
 
+function movePaddle() {
+    paddle.x = paddle.x + paddle.dx
+
+    if (paddle.x < 0) {
+        paddle.x = 0
+    }
+
+    if (paddle.x + paddle.w > canvas.width) {
+        paddle.x = canvas.width - paddle.w
+    }
+}
 
 function draw() {
+    ctx.clearRect(0 , 0,canvas.width,canvas.height)
     drawPaddle()
     drawBall()
     drawScore()
     drawBricks()
 }
 
-draw()
+function update() {
+    movePaddle()
+    draw()
+    requestAnimationFrame(update)
+}
+
+update ()
+
+function keyDown(e) {
+    if (e.key == 'ArrowRight' || e.key == 'Right' || e.key == 'd') {
+        paddle.dx = paddle.speed
+    }
+
+    if (e.key == 'ArrowLeft' || e.key == 'Left' || e.key == 'a') {
+        paddle.dx = -paddle.speed
+    }
+}
+
+function keyUp(e) {
+    if (e.key == 'ArrowRight' || e.key == 'Right' || e.key == 'd' || e.key == 'ArrowLeft' || e.key == 'Left' || e.key == 'a')
+        paddle.dx = 0
+}
+
+document.addEventListener('keydown', keyDown)
+document.addEventListener('keyup', keyUp)
 
 show.addEventListener('click', () => {
     rules.classList.toggle('show')
