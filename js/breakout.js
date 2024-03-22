@@ -96,6 +96,10 @@ function movePaddle() {
     }
 }
 
+function moveBall() {
+    
+}
+
 function draw() {
     ctx.clearRect(0 , 0,canvas.width,canvas.height)
     drawPaddle()
@@ -105,6 +109,7 @@ function draw() {
 }
 
 function update() {
+    moveBall()
     movePaddle()
     draw()
     requestAnimationFrame(update)
