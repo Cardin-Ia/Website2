@@ -25,7 +25,7 @@ paddle = {
     h: 10,
     speed: 8,
     dx: 0,
-    border-radius: 25,
+    arcTo
 }
 
 BrickInfo = {
