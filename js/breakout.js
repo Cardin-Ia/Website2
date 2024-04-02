@@ -123,6 +123,7 @@ if (ball.x - ball.size > paddle.x && ball.x + ball.size < paddle.x + paddle.w &&
     }
 
 
+
 function draw() {
     ctx.clearRect(0 , 0,canvas.width,canvas.height)
     drawPaddle()
