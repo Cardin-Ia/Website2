@@ -145,7 +145,7 @@ function increaseScore() {
 }
 
 function showAllBricks() {
-    brick.forEach(colum => {
+    bricks.forEach(colum => {
         column.forEach(brick => {
             brick.visible = true
         })
