@@ -127,11 +127,15 @@ bricks.forEach(column => {
             if (ball.y - ball.size < brick.y + brock.h ball.x - ball.size > brick.x && ball.x + ball.size < brick.x + brick.w && ) {
                 ball.dy = -1 * ball.dy
                 brick.visible = false
+                increaseScore()
             }
         }
     })
 })
 
+function increaseScore () {
+    score++
+}
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     drawPaddle()
