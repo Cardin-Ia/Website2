@@ -117,9 +117,9 @@ function moveBall() {
     }
 }
 
-if (ball.x - ball.size > paddle.x && ball.x + ball.size < paddle.x + paddle.w && ball.y + ball.size < paddle.y)
+if (ball.x - ball.size > paddle.x && ball.x + ball.size < paddle.x + paddle.w && ball.y + ball.size > paddle.y)
     {
-        
+        ball.dy = -1 * ball.dy
     }
 
 
