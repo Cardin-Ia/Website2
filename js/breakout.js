@@ -125,7 +125,7 @@ if (ball.x - ball.size > paddle.x && ball.x + ball.size < paddle.x + paddle.w &&
     bricks.forEach(column => {
         column.forEach(brick => {
             if (brick.visible) {
-                if (ball.y - ball.size < brick.y + brock.h) {
+                if (ball.y - ball.size < brick.y + brock.h ball.x - ball.size > brick.x && ball.x + ball.size < brick.x + brick.w && ) {
                     ball.dy = -1 * ball.dy
                     brick.visible = false
                 }
