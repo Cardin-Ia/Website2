@@ -133,9 +133,23 @@ bricks.forEach(column => {
     })
 })
 
-function increaseScore () {
+function increaseScore() {
     score++
+
+    if (score == brickRowCount * brickColumnCount) {
+        score = 0
+        showAllBricks()
+    }
 }
+
+function showAllBricks() {
+    brick.forEach(colum => {
+        column.forEach(brick => {
+            brick.visible = true
+        })
+    })
+}
+
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     drawPaddle()
