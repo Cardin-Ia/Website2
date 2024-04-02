@@ -117,6 +117,12 @@ function moveBall() {
     }
 }
 
+if (ball.x - ball.size > paddle.x && ball.x + ball.size < paddle.x + paddle.w && ball.y + ball.size < paddle.y)
+    {
+        
+    }
+
+
 function draw() {
     ctx.clearRect(0 , 0,canvas.width,canvas.height)
     drawPaddle()
