@@ -122,7 +122,16 @@ if (ball.x - ball.size > paddle.x && ball.x + ball.size < paddle.x + paddle.w &&
         ball.dy = -1 * ball.dy
     }
 
-
+    bricks.forEach(column => {
+        column.forEach(brick => {
+            if (brick.visible) {
+                if (ball.y - ball.size < brick.y + brock.h) {
+                    ball.dy = -1 * ball.dy
+                    brick.visible = false
+                }
+            }
+        })
+    })
 
 function draw() {
     ctx.clearRect(0 , 0,canvas.width,canvas.height)
