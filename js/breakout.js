@@ -169,9 +169,7 @@ let darkMode = false;
 let gameover = false;
 
 const startButton = document.getElementById('start-btn');
-const restartButton = document.createElement('button');
-restartButton.textContent = 'Restart';
-restartButton.classList.add('btn');
+const restartButton = document.getElementById('restart-btn');
 
 const darkModeButton = document.getElementById('dark-mode-btn');
 
