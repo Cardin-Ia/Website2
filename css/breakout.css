@@ -49,7 +49,7 @@ h1 {
     padding: 20px;
     line-height: 1.5;
     transform: translateX(-400px);
-    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out; 
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0;
 }
 
@@ -63,3 +63,7 @@ canvas {
     display: block;
     border-radius: 5px;
 }
+
+<button id="start-btn" class="btn start">Start Game</button>
+<button id="dark-mode-btn" class="btn">Toggle Dark Mode</button>
+<button id="restart-btn" class="btn start">Restart</button>
