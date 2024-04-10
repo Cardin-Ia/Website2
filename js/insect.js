@@ -91,10 +91,12 @@ function WL() {
     if (score > 59 && seconds < 31)
     {
         W.classList.add('visible')
+        message.classList.remove('visible')
     }
 
     if (seconds > 30 && score < 60)
     {
         L.classList.add('visible')
+        message.classList.remove('visible')
     }
 }
