@@ -75,6 +75,7 @@ function increaseScore() {
         message.classList.add('visible')
     }
     scoreEl.innerHTML = `Score: ${score}`
+    WL()
 }
 
 function getRandomLocation() {
@@ -96,5 +97,3 @@ function WL() {
         document.getElementById('L').style.display = 'block';
     }
 }
-
-WL()
