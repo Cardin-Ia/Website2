@@ -96,3 +96,5 @@ function WL() {
         document.getElementById('L').style.display = 'block';
     }
 }
+
+WL()
