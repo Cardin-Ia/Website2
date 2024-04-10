@@ -84,3 +84,10 @@ function getRandomLocation() {
     const y = Math.random() * (height - 200) + 100
     return {x,y}
 }
+
+function WL() {
+    if (score > 59 && seconds < 30)
+    {
+        
+    }
+}
