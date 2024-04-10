@@ -9,6 +9,8 @@ const won = document.getElementById('winning')
 let seconds = 0
 let score = 0
 let selected_insect = {}
+const win = document.getElementById('W')
+const loss = document.getElementById('L')
 
 start_btn.addEventListener('click',() => {
     screens[0].classList.add('up')
@@ -89,11 +91,11 @@ function getRandomLocation() {
 function WL() {
     if (score > 59 && seconds < 31)
     {
-        document.getElementById('W').style.display = 'block';
+        W.classList.add('visible')
     }
 
-    if (seconds > 30)
+    if (seconds > 30 && score < 61)
     {
-        document.getElementById('L').style.display = 'block';
+        L.classList.add('visible')
     }
 }
