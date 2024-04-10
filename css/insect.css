@@ -149,3 +149,11 @@ h1 {
 .insect.caught {
     transform: translate(-50%, -50%) scale(0);
 }
+
+#W {
+    display: none;
+}
+
+#L {
+    disaply: none;
+}
