@@ -93,7 +93,7 @@ function WL() {
         W.classList.add('visible')
     }
 
-    if (seconds > 30 && score < 61)
+    if (seconds > 30 && score < 60)
     {
         L.classList.add('visible')
     }
