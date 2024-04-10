@@ -151,9 +151,17 @@ h1 {
 }
 
 #W {
-    display: none;
+    opacity: 0;
 }
 
 #L {
-    display: none;
+    opacity: 0;
+}
+
+#W.visible {
+    opacity: 1;
+}
+
+#L.visible {
+    opacity: 1;
 }
