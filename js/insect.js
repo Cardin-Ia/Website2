@@ -86,8 +86,13 @@ function getRandomLocation() {
 }
 
 function WL() {
-    if (score > 59 && seconds < 30)
+    if (score > 59 && seconds < 31)
     {
-        
+        document.getElementById('W').style.display = 'block';
+    }
+
+    if (seconds > 30)
+    {
+        document.getElementById('L').style.display = 'block';
     }
 }
