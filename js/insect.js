@@ -45,7 +45,6 @@ function catchInsect() {
     this.classList.add('caught')
     setTimeout(() => this.remove(), 1000)
     addInsects()
-    WL()
 }
 
 function addInsects() {
@@ -77,17 +76,7 @@ function increaseScore() {
         message.classList.add('visible')
     }
     scoreEl.innerHTML = `Score: ${score}`
-}
 
-function getRandomLocation() {
-    const width = window.innerWidth
-    const height = window.innerHeight
-    const x = Math.random() * (width - 200) + 100
-    const y = Math.random() * (height - 200) + 100
-    return {x,y}
-}
-
-function WL() {
     if (score > 59 && seconds < 31)
     {
         W.classList.add('visible')
@@ -99,4 +88,18 @@ function WL() {
         L.classList.add('visible')
         message.classList.remove('visible')
     }
+
+    if (seconds > 30 && sco)
+    {
+        L.classList.add('visible')
+        message.classList.remove('visible')
+    }
+}
+
+function getRandomLocation() {
+    const width = window.innerWidth
+    const height = window.innerHeight
+    const x = Math.random() * (width - 200) + 100
+    const y = Math.random() * (height - 200) + 100
+    return {x,y}
 }
