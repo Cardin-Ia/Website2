@@ -45,6 +45,7 @@ function catchInsect() {
     this.classList.add('caught')
     setTimeout(() => this.remove(), 1000)
     addInsects()
+    WL()
 }
 
 function addInsects() {
@@ -76,7 +77,6 @@ function increaseScore() {
         message.classList.add('visible')
     }
     scoreEl.innerHTML = `Score: ${score}`
-    WL()
 }
 
 function getRandomLocation() {
