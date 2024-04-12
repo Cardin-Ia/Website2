@@ -88,12 +88,6 @@ function increaseScore() {
         L.classList.add('visible')
         message.classList.remove('visible')
     }
-
-    if (seconds > 30 && sco)
-    {
-        L.classList.add('visible')
-        message.classList.remove('visible')
-    }
 }
 
 function getRandomLocation() {
