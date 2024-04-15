@@ -81,6 +81,7 @@ function increaseScore() {
     {
         W.classList.add('visible')
         message.classList.remove('visible')
+        W = true
     }
 
     if (seconds > 30 && score < 60)
