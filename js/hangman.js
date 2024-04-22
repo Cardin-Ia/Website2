@@ -22,8 +22,12 @@ function displayWord() {
         </span>
     `).join('')}
 `
-    const innerWord = wordEl.innerText.()
-    console.log(wordEl.innerText.replace(/\n/g, ''))
+    const innerWord = wordEl.innerText.replace(/\n/g, '')
+
+    if (innerWord == selectedWord) {
+        finalMessage.innerText = 'Congratualtions! You Won!'
+        popup.style.display = 'flex'
+    }
 }
 
 displayWord()
