@@ -11,7 +11,7 @@ const word = ['application', 'programming', 'interface', 'wizard']
 let selectedIndex = Math.floor(word.length * Math.random())
 let selectedWord = word[selectedIndex]
 
-const correctLetters = []
+const correctLetters = ['w', 'i', 'z', 'a', 'r', 'd']
 const wrongLetters = []
 
 function displayWord() {
@@ -29,5 +29,9 @@ function displayWord() {
         popup.style.display = 'flex'
     }
 }
+
+window.addEventListener('keydown', e => {
+
+})
 
 displayWord()
