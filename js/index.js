@@ -2,13 +2,6 @@ btn = document.querySelector('.btn')
 button = document.getElementById('start-button')
 link = document.getElementById('links')
 
-
-button.addEventListener('click', () => {
-button.classList.add('invisible')
-links.classList.add('visible')
-})
-
-
 btn.addEventListener('click', () => {
     var randomNumber1 = Math.floor(Math.random() * 256);
     var randomNumber2 = Math.floor(Math.random() * 256);
@@ -17,4 +10,9 @@ btn.addEventListener('click', () => {
     document.body.style.backgroundColor = rgb;
     document.body.classList.remove('instant-color-change');
 
+})
+
+button.addEventListener('click', () => {
+button.classList.add('invisible')
+links.classList.add('visible')
 })
