@@ -5,7 +5,7 @@ link = document.getElementById('links')
 
 button.addEventListener('click', () => {
 button.classList.add('invisible')
-link.classList.add('visible')
+links.classList.add('visible')
 })
 
 
