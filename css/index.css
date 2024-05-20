@@ -3,6 +3,9 @@ body{
     height: 100%;
     margin: 0;
     text-align: center;
+}
+
+a {
     color: white;
 }
 #start-button{
@@ -34,5 +37,6 @@ opacity:0;
 
 h1
 {
+    color: white;
     text-align: center;
 }
